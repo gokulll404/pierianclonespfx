@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pierian-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pierian/PierianWebPart.js",
+          "manifest": "./src/webparts/pierian/PierianWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PierianWebPartStrings": "lib/webparts/pierian/loc/{locale}.js"
+  }
+}

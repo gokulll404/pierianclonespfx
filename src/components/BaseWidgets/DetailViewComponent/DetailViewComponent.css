@@ -1,0 +1,332 @@
+.detail-view-leadership-profile-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.detail-view-leadership-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.detail-view-leadership-avatar-container {
+  flex-shrink: 0;
+}
+
+.detail-view-leadership-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-view-leadership-details {
+  flex: 1;
+}
+
+.detail-view-leadership-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.detail-view-leadership-designation {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+  margin: 0 0 8px 0;
+}
+
+.detail-view-leadership-date {
+  font-size: 14px;
+  color: #adb5bd;
+  font-weight: 500;
+}
+
+.detail-view-leadership-message-content {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 24px;
+  border-left: 4px solid var(--primary-color, #0d6efd);
+  position: relative;
+}
+
+.detail-view-leadership-message-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #495057;
+  font-style: italic;
+  position: relative;
+  text-align: justify;
+}
+
+.detail-view-leadership-message-recognized-by {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #495057;
+  font-style: italic;
+  position: relative;
+  text-align: justify;
+  margin-top: 12px;
+}
+
+.detail-view-leadership-message-text::before {
+  content: '"';
+  font-size: 48px;
+  color: var(--primary-color, #0d6efd);
+  position: absolute;
+  top: -34px;
+  left: -8px;
+  font-family: var(--font-family) !important;;
+  opacity: 0.3;
+}
+
+.detail-view-leadership-message-text::after {
+  content: '"';
+  font-size: 48px;
+  color: var(--primary-color, #0d6efd);
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  font-family: var(--font-family) !important;;
+  opacity: 0;
+}
+
+/* Responsive Design for Leadership Message */
+@media (max-width: 768px) {
+  .detail-view-leadership-profile-info {
+    gap: 16px;
+  }
+  
+  .detail-view-leadership-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .detail-view-leadership-name {
+    font-size: 24px;
+  }
+  
+  .detail-view-leadership-designation {
+    font-size: 15px;
+  }
+  
+  .detail-view-leadership-message-content {
+    padding: 20px;
+  }
+  
+  .detail-view-leadership-message-text {
+    font-size: 16px;
+  }
+  
+  .detail-view-leadership-message-text::before,
+  .detail-view-leadership-message-text::after {
+    font-size: 40px;
+  }
+  
+  .detail-view-leadership-message-text::before {
+    top: -6px;
+    left: -6px;
+  }
+  
+  .detail-view-leadership-message-text::after {
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-view-leadership-profile-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .detail-view-leadership-avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+  }
+  
+  .detail-view-leadership-name {
+    font-size: 20px;
+  }
+  
+  .detail-view-leadership-designation {
+    font-size: 15px;
+  }
+  
+  .detail-view-leadership-message-content {
+    padding: 16px;
+  }
+  
+  .detail-view-leadership-message-text {
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .detail-view-leadership-message-text::before {
+    left: 0;
+    top: -4px;
+  }
+  
+  .detail-view-leadership-message-text::after {
+    font-size: 36px;
+    bottom: -18px;
+  }
+}
+
+/* Default Detail View Styles */
+.detail-view-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Article Header */
+.detail-view-article-header {
+  margin-bottom: 32px;
+}
+
+.detail-view-article-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.detail-view-article-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.detail-view-article-date {
+  font-weight: 500;
+}
+
+.detail-view-meta-separator {
+  color: #adb5bd;
+}
+
+.detail-view-article-read-time {
+  color: #6c757d;
+}
+
+/* Hero Image */
+.detail-view-hero-image-container {
+  margin-bottom: 40px;
+}
+
+.detail-view-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Article Content */
+.detail-view-article-content {
+  padding: 40px 0px;
+}
+
+.detail-view-content-section {
+  margin-bottom: 32px;
+}
+
+.detail-view-content-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-view-section-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #212529;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+.detail-view-section-paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #495057;
+  margin: 0 0 16px 0;
+  text-align: justify;
+}
+
+.detail-view-section-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .detail-view-container {
+    padding: 16px;
+  }
+
+  .detail-view-article-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .detail-view-article-meta {
+    font-size: 13px;
+  }
+
+  .detail-view-hero-image {
+    height: 250px;
+  }
+
+  .detail-view-article-content {
+    padding: 24px;
+  }
+
+  .detail-view-section-heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .detail-view-section-paragraph {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-view-container {
+    padding: 12px;
+  }
+
+  .detail-view-article-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .detail-view-hero-image {
+    height: 200px;
+  }
+
+  .detail-view-article-content {
+    padding: 20px;
+  }
+
+  .detail-view-section-heading {
+    font-size: 18px;
+  }
+
+  .detail-view-section-paragraph {
+    font-size: 14px;
+    text-align: left;
+  }
+}

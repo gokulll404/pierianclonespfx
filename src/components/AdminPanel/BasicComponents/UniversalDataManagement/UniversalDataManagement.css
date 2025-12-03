@@ -1,0 +1,1128 @@
+/* Container and Layout */
+.universal-data-container-universal-data-management {
+    min-height: 100vh;
+    background: var(--background-color);
+    padding: 24px;
+}
+
+.universal-data-header-universal-data-management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.universal-data-header-universal-data-management h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #131A25;
+    margin: 0;
+}
+
+.header-actions-universal-data-management {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Search Input Styling */
+.search-input-universal-data-management {
+    width: 225px;
+    height: 36px;
+    border: 1px solid #131A25;
+    border-radius: 6px !important;
+    box-shadow: none;
+}
+
+.search-input-universal-data-management:hover,
+.search-input-universal-data-management:focus-within {
+    border-color: #131A25;
+}
+
+/* Create Button Styling */
+.create-button-universal-data-management {
+    height: 36px;
+    background: #131A25;
+    border: none;
+    font-weight: 500;
+    padding: 0 16px;
+    border-radius: 6px !important;
+    transition: all 0.2s ease;
+}
+
+.create-button-universal-data-management:hover {
+    background: #010b13;
+    transform: translateY(-1px);
+}
+
+/* Table Container */
+.table-container-universal-data-management {
+    background: white;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Custom Table Styling */
+.custom-table-universal-data-management {
+    overflow: hidden;
+}
+
+.custom-table-universal-data-management .ant-table {
+    border-radius: 0;
+}
+
+.custom-table-universal-data-management .ant-table-thead>tr>th {
+    background: #F6F7F7;
+    border-bottom: 2px solid #f0f0f0;
+    color: #595959;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 16px 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-table-universal-data-management .ant-table-tbody>tr>td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #f5f5f5;
+    vertical-align: top;
+}
+
+.custom-table-universal-data-management .ant-table-tbody>tr:hover>td {
+    background: #f8f9ff;
+}
+
+.custom-table-universal-data-management .ant-table-tbody>tr:last-child>td {
+    border-bottom: none;
+}
+
+/* Generic text styling for table cells */
+.custom-table-universal-data-management [class*="-text-universal-data-management"] {
+    display: block;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Specific styling for common field types */
+.title-text-universal-data-management,
+.name-text-universal-data-management {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.description-text-universal-data-management {
+    color: #555;
+    font-size: 13px;
+}
+
+.status-text-universal-data-management,
+.type-text-universal-data-management {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 100px;
+}
+
+/* Image styling for table */
+.image-universal-data-management,
+.thumbnail-universal-data-management {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Action Buttons */
+.action-buttons-universal-data-management {
+    display: flex;
+    gap: 8px;
+}
+
+.action-button-universal-data-management {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.delete-btn-universal-data-management {
+    color: #ff4d4f;
+    background: #fff2f0;
+}
+
+.delete-btn-universal-data-management:hover {
+    background: #ffccc7;
+    color: #cf1322;
+}
+
+.edit-btn-universal-data-management {
+    color: #52c41a;
+    background: #f6ffed;
+}
+
+.edit-btn-universal-data-management:hover {
+    background: #d9f7be;
+    color: #389e0d;
+}
+
+/* Pagination Styling */
+.custom-table-universal-data-management .ant-pagination {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.custom-table-universal-data-management .ant-pagination-item {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.custom-table-universal-data-management .ant-pagination-item-active {
+    border-color: #131A25;
+}
+
+.custom-table-universal-data-management .ant-pagination-item-active a {
+    color: #131A25;
+}
+
+.custom-table-universal-data-management .ant-pagination-prev,
+.custom-table-universal-data-management .ant-pagination-next {
+    border: 0;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px;
+}
+
+/* Custom Drawer Styles */
+.custom-drawer-universal-data-management .ant-drawer-content {
+    background: #f8f9fa;
+}
+
+.drawer-content-universal-data-management {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-header-universal-data-management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: white;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.drawer-header-universal-data-management h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.close-button-universal-data-management {
+    color: #666;
+    padding: 4px;
+    transition: all 0.2s ease;
+}
+
+.close-button-universal-data-management:hover {
+    color: #333;
+    background: #f5f5f5;
+}
+
+.drawer-body-universal-data-management {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.form-section-universal-data-management {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-group-universal-data-management {
+    margin-bottom: 20px;
+}
+
+.form-label-universal-data-management {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.required-asterisk-universal-data-management {
+    color: #ff4d4f;
+    margin-left: 4px;
+}
+
+/* Form Input Styling */
+.form-input-universal-data-management {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.form-input-universal-data-management:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.form-select-universal-data-management {
+    width: 100%;
+    height: 40px;
+}
+
+.form-select-universal-data-management .ant-select-selector {
+    height: 40px !important;
+    border-radius: 6px !important;
+}
+
+.form-radio-group-universal-data-management .ant-radio-wrapper {
+    margin-right: 16px;
+}
+
+/* Textarea Container */
+.textarea-container-universal-data-management {
+    position: relative;
+}
+
+.form-textarea-universal-data-management {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+}
+
+.form-textarea-universal-data-management:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Date and Time Picker Styling */
+.date-picker-universal-data-management,
+.time-picker-universal-data-management {
+    width: 100%;
+    height: 40px;
+}
+
+.date-picker-universal-data-management .ant-picker-selector,
+.time-picker-universal-data-management .ant-picker-selector {
+    height: 40px;
+    border-radius: 6px;
+}
+
+/* Image Upload Section */
+.image-upload-section-universal-data-management {
+    border: 2px dashed #d9d9d9;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.image-upload-section-universal-data-management:hover {
+    border-color: #40a9ff;
+}
+
+.upload-placeholder-universal-data-management {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px
+}
+
+.placeholder-content-universal-data-management {
+    text-align: center;
+}
+
+.placeholder-icon-universal-data-management {
+    font-size: 24px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.placeholder-text-universal-data-management {
+    margin: 0 0 12px;
+    color: #666;
+    font-size: 14px;
+}
+
+.file-input-universal-data-management {
+    display: none;
+}
+
+.upload-button-universal-data-management {
+    background: #1890ff;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.upload-button-universal-data-management:hover {
+    background: #40a9ff;
+}
+
+/* Upload Preview */
+.upload-preview-universal-data-management {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px
+}
+
+.preview-container-universal-data-management {
+    flex: 0 0 auto;
+}
+
+.preview-image-universal-data-management {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+}
+
+.upload-info-universal-data-management {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.file-details-universal-data-management {
+    flex: 1;
+    min-width: 0;
+}
+
+.filename-universal-data-management {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.filesize-universal-data-management {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.progress-container-universal-data-management {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progress-bar-universal-data-management {
+    flex: 1;
+    height: 4px;
+    background: #e8e8e8;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill-universal-data-management {
+    height: 100%;
+    background: #52c41a;
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.remove-button-universal-data-management,
+.replace-button-universal-data-management {
+    padding: 4px 12px;
+    font-size: 12px;
+    height: auto;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.remove-button-universal-data-management {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    color: #333;
+}
+
+.remove-button-universal-data-management:hover {
+    border-color: #ff4d4f;
+    color: #ff4d4f;
+}
+
+.replace-button-universal-data-management {
+    background: #1890ff;
+    border: none;
+    color: #fff;
+}
+
+.replace-button-universal-data-management:hover {
+    background: #40a9ff;
+}
+
+/* Drawer Footer */
+.drawer-footer-universal-data-management {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.cancel-btn-universal-data-management {
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.cancel-btn-universal-data-management:hover {
+    border-color: #40a9ff;
+    color: #40a9ff;
+}
+
+.confirm-btn-universal-data-management {
+    height: 36px;
+    padding: 0 16px;
+    background: #1890ff;
+    border-color: #1890ff;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.confirm-btn-universal-data-management:hover {
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+
+/* Status Tags */
+.ant-tag {
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 8px;
+}
+
+/* Essential CSS additions for UniversalDataManagement.css - Media File Support Only */
+
+/* Video preview container */
+.preview-video-container-universal-data-management {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.preview-video-universal-data-management {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Editing mode preview container */
+.preview-editing-container-universal-data-management {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+}
+
+.preview-editing-container-universal-data-management img,
+.preview-editing-container-universal-data-management video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* File type display */
+.filetype-universal-data-management {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Supported formats text */
+.supported-formats-universal-data-management {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Gallery Management specific classes for PhotoVideoGallery component */
+.gallery-management-preview-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.gallery-management-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-management-preview-video-container {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-management-preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-management-file-name-text {
+  font-weight: 500;
+  color: #262626;
+}
+
+.gallery-management-file-type-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #595959;
+}
+
+.gallery-management-file-type-icon {
+  font-size: 16px;
+}
+
+.gallery-management-image-icon {
+  color: #52c41a;
+}
+
+.gallery-management-video-icon {
+  color: #1890ff;
+}
+
+.gallery-management-file-description-text {
+  color: #595959;
+  line-height: 1.4;
+}
+
+.gallery-management-date-text {
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .universal-data-container-universal-data-management {
+        padding: 16px;
+    }
+
+    .universal-data-header-universal-data-management {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .universal-data-header-universal-data-management h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .header-actions-universal-data-management {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-input-universal-data-management {
+        width: 100%;
+    }
+
+    .create-button-universal-data-management {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .custom-table-universal-data-management .ant-table-thead>tr>th,
+    .custom-table-universal-data-management .ant-table-tbody>tr>td {
+        padding: 12px 8px;
+    }
+
+    .custom-table-universal-data-management [class*="-text-universal-data-management"] {
+        max-width: 120px;
+    }
+
+    .custom-drawer-universal-data-management {
+        width: 100% !important;
+    }
+
+    .filename-universal-data-management {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .universal-data-header-universal-data-management h1 {
+        font-size: 1.25rem;
+    }
+
+    .custom-table-universal-data-management .ant-table-thead>tr>th,
+    .custom-table-universal-data-management .ant-table-tbody>tr>td {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+
+    .image-universal-data-management,
+    .thumbnail-universal-data-management {
+        width: 40px;
+        height: 30px;
+    }
+
+    .custom-table-universal-data-management [class*="-text-universal-data-management"] {
+        max-width: 80px;
+    }
+
+    .filename-universal-data-management {
+        max-width: 100px;
+    }
+
+    .form-section-universal-data-management {
+        padding: 16px;
+    }
+}
+
+/* Scroll styling for table */
+.custom-table-universal-data-management .ant-table-body::-webkit-scrollbar {
+    height: 8px;
+}
+
+.custom-table-universal-data-management .ant-table-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.custom-table-universal-data-management .ant-table-body::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.custom-table-universal-data-management .ant-table-body::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Tooltip for truncated text */
+.custom-table-universal-data-management [class*="-text-universal-data-management"]:hover,
+.filename-universal-data-management:hover {
+    cursor: help;
+}
+
+/* Loading states */
+.loading-universal-data-management {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Error states */
+.error-message-universal-data-management {
+    color: #ff4d4f;
+    background: #fff2f0;
+    border: 1px solid #ffccc7;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+/* Success states */
+.success-message-universal-data-management {
+    color: #52c41a;
+    background: #f6ffed;
+    border: 1px solid #b7eb8f;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+/* Custom validation styling */
+.form-group-universal-data-management.has-error .form-input-universal-data-management,
+.form-group-universal-data-management.has-error .form-textarea-universal-data-management,
+.form-group-universal-data-management.has-error .form-select-universal-data-management .ant-select-selector {
+    border-color: #ff4d4f;
+}
+
+.form-group-universal-data-management.has-error .form-label-universal-data-management {
+    color: #ff4d4f;
+}
+
+/* Disabled states */
+.form-input-universal-data-management:disabled,
+.form-textarea-universal-data-management:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Focus states for accessibility */
+.action-button-universal-data-management:focus,
+.create-button-universal-data-management:focus,
+.cancel-btn-universal-data-management:focus,
+.confirm-btn-universal-data-management:focus {
+    outline: 2px solid #1890ff;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .universal-data-header-universal-data-management {
+        border: 1px solid #000;
+    }
+    
+    .custom-table-universal-data-management .ant-table-thead>tr>th {
+        border: 1px solid #000;
+    }
+    
+    .form-input-universal-data-management,
+    .form-textarea-universal-data-management {
+        border: 2px solid #000;
+    }
+}
+
+/* Combined Large Screen Responsive Styles (1440px - 2000px) */
+/* Combined Large Screen Responsive Styles (1440px - 2000px) */
+@media (min-width: 1440px) and (max-width: 2000px) {
+    /* Container and Layout */
+
+    .form-section-universal-data-management {
+        max-width: 530px;
+    }
+
+    .drawer-header-universal-data-management {
+        max-width: 530px;
+    }
+
+    .drawer-footer-universal-data-management {
+        max-width: 530px;
+    }
+
+    .universal-data-container-universal-data-management {
+        padding: 32px 48px;
+        max-width: 1480px;
+        margin: 0 auto; /* center content */
+    }
+
+    .universal-data-header-universal-data-management {
+        gap: 24px;
+    }
+
+    .universal-data-header-universal-data-management h1 {
+        font-size: 2rem;
+    }
+
+    .header-actions-universal-data-management {
+        gap: 20px;
+    }
+
+    .search-input-universal-data-management {
+        width: 400px;
+    }
+
+    .create-button-universal-data-management {
+        min-width: 180px;
+    }
+
+    /* Table Styles */
+    .custom-table-universal-data-management .ant-table-thead > tr > th,
+    .custom-table-universal-data-management .ant-table-tbody > tr > td {
+        padding: 16px 12px;
+        font-size: 15px;
+    }
+
+    .custom-table-universal-data-management [class*="-text-universal-data-management"] {
+        max-width: 250px;
+    }
+
+    .filename-universal-data-management {
+        max-width: 300px;
+    }
+
+    /* Drawer Styles */
+    .custom-drawer-universal-data-management {
+        width: 800px !important; /* wider drawer on large screens */
+    }
+
+    .form-section-universal-data-management {
+        padding: 24px 32px;
+    }
+
+    /* Modal Container - Higher specificity */
+    .ant-modal-wrap .custom-modal-universal-data-management .ant-modal,
+    .custom-modal-universal-data-management.ant-modal,
+    .ant-modal.custom-modal-universal-data-management {
+        max-width: 900px !important;
+        width: 60% !important;
+        min-width: 800px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Modal Content */
+    .custom-modal-universal-data-management .ant-modal-content,
+    .ant-modal.custom-modal-universal-data-management .ant-modal-content {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* Modal Header */
+    .custom-modal-universal-data-management .modal-header-universal-data-management,
+    .custom-modal-universal-data-management .ant-modal-header {
+        padding: 24px 32px !important;
+        gap: 24px;
+    }
+
+    .custom-modal-universal-data-management .modal-header-universal-data-management h2,
+    .custom-modal-universal-data-management .ant-modal-title {
+        font-size: 20px !important;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+    }
+
+    /* Modal Body */
+    .custom-modal-universal-data-management .modal-body-universal-data-management,
+    .custom-modal-universal-data-management .ant-modal-body {
+        padding: 32px !important;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    /* Form sections within modal */
+    .custom-modal-universal-data-management .form-section-universal-data-management {
+        padding: 24px 32px !important;
+        margin-bottom: 24px;
+    }
+
+    /* Form inputs within modal */
+    .custom-modal-universal-data-management .form-input-universal-data-management {
+        font-size: 15px !important;
+        height: 42px !important;
+    }
+
+    .custom-modal-universal-data-management .form-textarea-universal-data-management {
+        font-size: 15px !important;
+        min-height: 120px !important;
+    }
+
+    .custom-modal-universal-data-management .form-select-universal-data-management {
+        height: 42px !important;
+    }
+
+    .custom-modal-universal-data-management .form-select-universal-data-management .ant-select-selector {
+        height: 42px !important;
+    }
+
+    /* Date and time pickers within modal */
+    .custom-modal-universal-data-management .date-picker-universal-data-management,
+    .custom-modal-universal-data-management .time-picker-universal-data-management {
+        height: 42px !important;
+    }
+
+    .custom-modal-universal-data-management .date-picker-universal-data-management .ant-picker-selector,
+    .custom-modal-universal-data-management .time-picker-universal-data-management .ant-picker-selector {
+        height: 42px !important;
+    }
+
+    /* Form labels */
+    .custom-modal-universal-data-management .form-label-universal-data-management {
+        font-size: 15px !important;
+        margin-bottom: 10px;
+    }
+
+    /* Form groups spacing */
+    .custom-modal-universal-data-management .form-group-universal-data-management {
+        margin-bottom: 24px !important;
+    }
+
+    /* Image upload section within modal */
+    .custom-modal-universal-data-management .image-upload-section-universal-data-management {
+        padding: 24px !important;
+        min-height: 150px;
+    }
+
+    .custom-modal-universal-data-management .upload-placeholder-universal-data-management {
+        min-height: 140px;
+    }
+
+    .custom-modal-universal-data-management .placeholder-icon-universal-data-management {
+        font-size: 28px !important;
+        margin-bottom: 12px;
+    }
+
+    .custom-modal-universal-data-management .placeholder-text-universal-data-management {
+        font-size: 15px !important;
+        margin-bottom: 16px;
+    }
+
+    /* Upload preview within modal */
+    .custom-modal-universal-data-management .preview-image-universal-data-management {
+        max-width: 120px !important;
+        max-height: 120px !important;
+    }
+
+    .custom-modal-universal-data-management .filename-universal-data-management {
+        max-width: 350px !important;
+        font-size: 15px !important;
+    }
+
+    /* Video preview within modal */
+    .custom-modal-universal-data-management .preview-video-container-universal-data-management {
+        height: 250px !important;
+    }
+
+    .custom-modal-universal-data-management .preview-editing-container-universal-data-management {
+        height: 250px !important;
+    }
+
+    /* Modal Footer */
+    .custom-modal-universal-data-management .modal-footer-universal-data-management,
+    .custom-modal-universal-data-management .ant-modal-footer {
+        padding: 20px 32px !important;
+        gap: 16px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .custom-modal-universal-data-management .cancel-btn-universal-data-management,
+    .custom-modal-universal-data-management .confirm-btn-universal-data-management {
+        height: 40px !important;
+        padding: 0 24px !important;
+        font-size: 15px !important;
+        min-width: 120px !important;
+    }
+
+    /* Ant Design default button overrides within modal */
+    .custom-modal-universal-data-management .ant-btn {
+        height: 40px !important;
+        padding: 0 24px !important;
+        font-size: 15px !important;
+        min-width: 120px !important;
+    }
+
+    /* Table within modal (if applicable) */
+    .custom-modal-universal-data-management .custom-table-universal-data-management .ant-table-thead > tr > th,
+    .custom-modal-universal-data-management .custom-table-universal-data-management .ant-table-tbody > tr > td {
+        padding: 16px 12px !important;
+        font-size: 15px !important;
+    }
+
+    .custom-modal-universal-data-management .custom-table-universal-data-management [class*="-text-universal-data-management"] {
+        max-width: 250px !important;
+    }
+
+    /* Close button styling */
+    .custom-modal-universal-data-management .close-button-universal-data-management,
+    .custom-modal-universal-data-management .ant-modal-close {
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 6px;
+    }
+
+    /* Supported formats text */
+    .custom-modal-universal-data-management .supported-formats-universal-data-management {
+        font-size: 13px !important;
+        margin-top: 12px;
+    }
+
+    /* File type display */
+    .custom-modal-universal-data-management .filetype-universal-data-management {
+        font-size: 13px !important;
+    }
+
+    /* Radio group spacing */
+    .custom-modal-universal-data-management .form-radio-group-universal-data-management .ant-radio-wrapper {
+        margin-right: 20px !important;
+        font-size: 15px !important;
+    }
+
+    /* Error and success messages within modal */
+    .custom-modal-universal-data-management .error-message-universal-data-management,
+    .custom-modal-universal-data-management .success-message-universal-data-management {
+        padding: 16px 20px !important;
+        font-size: 15px !important;
+        margin-bottom: 20px;
+    }
+
+    /* Loading state within modal */
+    .custom-modal-universal-data-management .loading-universal-data-management {
+        padding: 60px !important;
+    }
+
+    /* Additional Ant Design specific overrides */
+    .ant-modal-mask + .ant-modal-wrap .custom-modal-universal-data-management .ant-modal {
+        max-width: 900px !important;
+        width: 60% !important;
+        min-width: 800px !important;
+    }
+
+    /* For dynamically created modals */
+    .ant-modal-root .custom-modal-universal-data-management .ant-modal {
+        max-width: 900px !important;
+        width: 60% !important;
+        min-width: 800px !important;
+    }
+
+    /* Ensure proper centering */
+    .custom-modal-universal-data-management.ant-modal {
+        top: 50%;
+        transform: translateY(-50%);
+        padding-bottom: 0;
+    }
+}
+
+

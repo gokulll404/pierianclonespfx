@@ -1,0 +1,15 @@
+/* Ensures the page takes full height */
+/* .listing-page-outer-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+} */
+
+.listing-page-outer-div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+

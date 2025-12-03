@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pierian-clone-spfx-client-side-solution",
+    "id": "390cc538-1ad1-4b07-8be8-4921722fb0e5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "pierian-clone-spfx description"
+      },
+      "longDescription": {
+        "default": "pierian-clone-spfx description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "pierian-clone-spfx Feature",
+        "description": "The feature that activates elements of the pierian-clone-spfx solution.",
+        "id": "653c25fe-dfa8-4b58-8e9b-653eecb5802c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/pierian-clone-spfx.sppkg"
+  }
+}

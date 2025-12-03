@@ -1,0 +1,1336 @@
+.lp-wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 18px;
+}
+
+.lp-left {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.lp-right {
+    width: 380px;
+    /* fixed right width */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+/* CARD BASE */
+.lp-card {
+    background: #ffffff;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+}
+
+/* SECTION HEADER */
+.lp-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lp-section-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f1724;
+}
+
+.lp-viewall {
+    background: none;
+    border: none;
+    color: #c92b35;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* SMALL HELPERS */
+.lp-small-date {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 8px;
+}
+
+/* ================= HERO / CAROUSEL ================= */
+.lp-carousel {
+    position: relative;
+    height: 406px;
+    overflow: hidden;
+}
+
+.lp-carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.55);
+}
+
+.lp-carousel-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.lp-carousel-left {
+    max-width: 62%;
+}
+
+.lp-badge {
+    background: #ff6b6b;
+    padding: 6px 12px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.lp-carousel-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.02;
+    margin-bottom: 8px;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.lp-carousel-excerpt {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.96);
+    line-height: 1.5;
+    max-width: 58%;
+}
+
+/* arrows */
+.lp-carousel-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.lp-arrow-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lp-arrow-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+/* ================= CORPORATE ================= */
+.lp-corporate-grid {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.lp-corp-main {
+    flex: 1;
+}
+
+.lp-corp-main-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lp-corp-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.lp-corp-sub {
+    color: #6b7280;
+    margin-top: 6px;
+    line-height: 1.45;
+}
+
+/* right mini in corporate area: stacked small cards */
+.lp-corp-side {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lp-mini {
+    background: #fbfbfb;
+    padding: 12px;
+}
+
+/* ================= EVENTS ================= */
+.lp-events-grid {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.lp-event-main {
+    flex: 1;
+}
+
+.lp-event-main-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.lp-event-title {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.lp-event-sub {
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+/* event side small column */
+.lp-event-side {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ================= LATEST + NEW JOINERS ================= */
+.lp-grid-2col {
+    display: flex;
+    gap: 12px;
+}
+
+.lp-grid-2col>.lp-card {
+    flex: 1;
+}
+
+.lp-newjoin-red {
+    background: linear-gradient(180deg, #c92b35, #a51f2b);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18px;
+}
+
+.lp-newjoin-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.lp-jn-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.lp-jn-role {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+/* ================= GALLERY ================= */
+.lp-gallery-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.lp-gallery-arrow {
+    background: #f3f3f3;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.lp-gallery-arrow:hover {
+    background: #e5e5e5;
+}
+
+.lp-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 8px;
+}
+
+/* ================= RIGHT CONTAINER — SIDEBAR CARDS ================= */
+.lp-leadership {
+    background: linear-gradient(60deg, #591133, #ea413e);
+    color: #fff;
+    padding: 18px;
+    height: 406px;
+}
+
+.lp-lead-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lp-lead-title {
+    font-weight: 800;
+}
+
+.lp-lead-quote {
+    font-size: 40px;
+    color: rgba(255, 230, 230, 0.9);
+    margin-top: 8px;
+}
+
+.lp-lead-text {
+    margin-top: 6px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.lp-lead-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 145px;
+}
+
+.lp-lead-avatar {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.lp-lead-name {
+    font-weight: 700;
+}
+
+.lp-lead-role {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* HR Card */
+.lp-hr {
+    padding: 14px;
+    height: 406px;
+}
+
+.lp-hr-title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.lp-hr-text {
+    margin-top: 8px;
+    color: #374151;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Welcome onboard gradient */
+.lp-welcome {
+    background: linear-gradient(60deg, #a2353b, #740d22);
+    color: #fff;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    min-height: 240px;
+}
+
+/* Recognized list */
+.lp-rec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 33px;
+}
+
+.lp-rec-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    color: #000000;
+}
+
+.lp-rec-thumb {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.lp-rec-name {
+    font-weight: 700;
+}
+
+.lp-rec-role {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* Quick Links */
+.lp-ql-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lp-ql-list li {
+    padding: 8px 6px;
+    border-bottom: 1px solid #f3f3f4;
+}
+
+/* Jobs */
+.lp-jobs .lp-job-item {
+    background: #f7f7f8;
+    padding: 10px;
+}
+
+/* CIRCLES */
+.lp-circle {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+    .lp-wrapper {
+        max-width: 1100px;
+        gap: 18px;
+    }
+
+    .lp-left {
+        width: 700px;
+    }
+
+    .lp-right {
+        width: 340px;
+    }
+
+    .lp-carousel {
+        height: 420px;
+    }
+}
+
+@media (max-width: 900px) {
+    .lp-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 0 12px;
+    }
+
+    .lp-left,
+    .lp-right {
+        width: 100%;
+    }
+
+    .lp-corp-side,
+    .lp-event-side {
+        width: 100%;
+    }
+
+    .lp-grid-2col {
+        flex-direction: column;
+    }
+
+    .lp-gallery-img {
+        height: 90px;
+    }
+
+    .lp-carousel {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lp-carousel {
+        height: 240px;
+        padding: 0;
+    }
+
+    .lp-gallery-img {
+        height: 70px;
+    }
+
+    .lp-corp-main-img,
+    .lp-event-main-img {
+        height: 120px;
+    }
+
+    .lp-carousel-title {
+        font-size: 20px;
+    }
+}
+
+/* Remove card background, padding & shadows ONLY for the top carousel */
+.lp-carousel {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* Override card layout only for carousel */
+.lp-card.lp-carousel {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.lp-leadership .lp-viewall {
+    color: white;
+}
+
+.lp-event-card {
+    height: 393px;
+}
+
+.lp-corporate-card {
+    height: 393px;
+}
+
+.lp-card.lp-recognized {
+    background-color: #ffffff !important;
+    height: 350px !important;
+}
+
+.lp-hr-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lp-hr-button {
+    color: black;
+}
+
+.lp-hr {
+    position: relative;
+    /* allows absolute positioning inside */
+}
+
+.lp-hr-nav {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+
+.lp-welcome-thumb {
+    height: 169px;
+    left: 12px;
+    position: relative;
+    top: 48px;
+    width: 238px;
+}
+
+.lp-new-joiners {
+    height: 404px;
+}
+
+.lp-latest-news {
+    height: 404px;
+    background-color: #494747;
+}
+
+/* Fix responsive break without touching desktop UI */
+@media (max-width: 1200px) {
+
+    .lp-event-card,
+    .lp-corporate-card,
+    .lp-new-joiners,
+    .lp-latest-news,
+    .lp-card.lp-recognized {
+        height: auto !important;
+        /* allow natural height */
+    }
+
+    .lp-welcome-thumb {
+        height: 130px;
+        width: auto;
+        top: 0;
+        left: 0;
+    }
+
+    .lp-lead-footer {
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .lp-right-scroll {
+        max-height: none !important;
+        overflow-y: visible !important;
+        width: 100% !important;
+    }
+
+    .lp-right {
+        width: 100% !important;
+        position: static !important;
+    }
+
+    .lp-wrapper {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .lp-gallery-img {
+        height: 90px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lp-carousel-title {
+        font-size: 22px !important;
+    }
+
+    .lp-carousel-excerpt {
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+    .lp-gallery-img {
+        height: 70px !important;
+    }
+
+    .lp-corp-main-img,
+    .lp-event-main-img {
+        height: 140px;
+    }
+}
+
+
+
+.lp-wrapper {
+    width: 90%;
+    max-width: 1280px;
+    /* total width */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 18px;
+}
+
+.lp-left {
+    width: 900px;
+    /* fixed left width */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.lp-right {
+    width: 380px;
+    /* fixed right width */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+/* CARD BASE */
+.lp-card {
+    background: #ffffff;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+}
+
+/* SECTION HEADER */
+.lp-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lp-section-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f1724;
+}
+
+.lp-viewall {
+    background: none;
+    border: none;
+    color: #c92b35;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* SMALL HELPERS */
+.lp-small-date {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 8px;
+}
+
+/* ================= HERO / CAROUSEL ================= */
+.lp-carousel {
+    position: relative;
+    height: 406px;
+    overflow: hidden;
+}
+
+.lp-carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.55);
+}
+
+.lp-carousel-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.lp-carousel-left {
+    max-width: 62%;
+}
+
+.lp-badge {
+    background: #ff6b6b;
+    padding: 6px 12px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.lp-carousel-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.02;
+    margin-bottom: 8px;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.lp-carousel-excerpt {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.96);
+    line-height: 1.5;
+    max-width: 58%;
+}
+
+/* arrows */
+.lp-carousel-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.lp-arrow-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lp-arrow-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+/* ================= CORPORATE ================= */
+.lp-corporate-grid {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.lp-corp-main {
+    flex: 1;
+}
+
+.lp-corp-main-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lp-corp-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.lp-corp-sub {
+    color: #6b7280;
+    margin-top: 6px;
+    line-height: 1.45;
+}
+
+/* right mini in corporate area: stacked small cards */
+.lp-corp-side {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lp-mini {
+    background: #fbfbfb;
+    padding: 12px;
+}
+
+/* ================= EVENTS ================= */
+.lp-events-grid {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.lp-event-main {
+    flex: 1;
+}
+
+.lp-event-main-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.lp-event-title {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.lp-event-sub {
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+/* event side small column */
+.lp-event-side {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ================= LATEST + NEW JOINERS ================= */
+.lp-grid-2col {
+    display: flex;
+    gap: 12px;
+}
+
+.lp-grid-2col>.lp-card {
+    flex: 1;
+}
+
+.lp-newjoin-red {
+    background: linear-gradient(180deg, #c92b35, #a51f2b);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18px;
+}
+
+.lp-newjoin-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.lp-jn-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.lp-jn-role {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+/* ================= GALLERY ================= */
+.lp-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.lp-gallery-img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(2, 6, 23, 0.06);
+}
+
+
+
+.lp-gallery-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.lp-gallery-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lp-gallery-arrow {
+    background: #f3f3f3;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.lp-gallery-arrow:hover {
+    background: #e5e5e5;
+}
+
+
+
+
+/* ================= RIGHT CONTAINER — SIDEBAR CARDS ================= */
+.lp-leadership {
+    background: linear-gradient(60deg, #591133, #ea413e);
+    color: #fff;
+    padding: 18px;
+    height: 406px;
+}
+
+.lp-lead-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lp-lead-title {
+    font-weight: 800;
+}
+
+.lp-lead-quote {
+    font-size: 40px;
+    color: rgba(255, 230, 230, 0.9);
+    margin-top: 8px;
+}
+
+.lp-lead-text {
+    margin-top: 6px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.lp-lead-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 145px;
+}
+
+.lp-lead-avatar {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.lp-lead-name {
+    font-weight: 700;
+}
+
+.lp-lead-role {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* HR Card */
+.lp-hr {
+    padding: 14px;
+    height: 406px;
+}
+
+.lp-hr-title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.lp-hr-text {
+    margin-top: 8px;
+    color: #374151;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Welcome onboard gradient */
+.lp-welcome {
+    background: linear-gradient(60deg, #a2353b, #740d22);
+    color: #fff;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    min-height: 240px;
+}
+
+/* Recognized list */
+.lp-rec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 33px;
+}
+
+.lp-rec-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    color: #000000;
+}
+
+.lp-rec-thumb {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.lp-rec-name {
+    font-weight: 700;
+}
+
+.lp-rec-role {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* Quick Links */
+.lp-ql-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lp-ql-list li {
+    padding: 8px 6px;
+    border-bottom: 1px solid #f3f3f4;
+}
+
+/* Jobs */
+.lp-jobs .lp-job-item {
+    background: #f7f7f8;
+    padding: 10px;
+}
+
+/* CIRCLES */
+.lp-circle {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+    .lp-wrapper {
+        max-width: 1100px;
+        gap: 18px;
+    }
+
+    .lp-left {
+        width: 700px;
+    }
+
+    .lp-right {
+        width: 340px;
+    }
+
+    .lp-carousel {
+        height: 420px;
+    }
+}
+
+@media (max-width: 900px) {
+    .lp-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 0 12px;
+    }
+
+    .lp-left,
+    .lp-right {
+        width: 100%;
+    }
+
+    .lp-corp-side,
+    .lp-event-side {
+        width: 100%;
+    }
+
+    .lp-grid-2col {
+        flex-direction: column;
+    }
+
+    .lp-gallery-img {
+        height: 90px;
+    }
+
+    .lp-carousel {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lp-carousel {
+        height: 240px;
+        padding: 0;
+    }
+
+    .lp-gallery-img {
+        height: 70px;
+    }
+
+    .lp-corp-main-img,
+    .lp-event-main-img {
+        height: 120px;
+    }
+
+    .lp-carousel-title {
+        font-size: 20px;
+    }
+}
+
+/* Remove card background, padding & shadows ONLY for the top carousel */
+.lp-carousel {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* Override card layout only for carousel */
+.lp-card.lp-carousel {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.lp-leadership .lp-viewall {
+    color: white;
+}
+
+.lp-event-card {
+    height: 393px;
+}
+
+.lp-corporate-card {
+    height: 393px;
+}
+
+.lp-card.lp-recognized {
+    background-color: #ffffff !important;
+    height: 350px !important;
+}
+
+.lp-hr-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lp-hr-button {
+    color: black;
+}
+
+.lp-hr {
+    position: relative;
+    /* allows absolute positioning inside */
+}
+
+.lp-hr-nav {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.lp-welcome-thumb {
+    height: 169px;
+    width: 238px;
+    position: relative;
+    top: 35px;
+    left: 12px
+}
+
+.lp-new-joiners {
+    height: 404px;
+}
+
+.lp-latest-news {
+    height: 404px;
+}
+
+@media (max-width: 1200px) {
+
+    .lp-event-card,
+    .lp-corporate-card,
+    .lp-new-joiners,
+    .lp-latest-news,
+    .lp-card.lp-recognized {
+        height: auto !important;
+    }
+
+    .lp-welcome-thumb {
+        height: 130px;
+        width: auto;
+        top: 0;
+        left: 0;
+    }
+
+    .lp-lead-footer {
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .lp-right-scroll {
+        max-height: none !important;
+        overflow-y: visible !important;
+        width: 100% !important;
+    }
+
+    .lp-right {
+        width: 100% !important;
+        position: static !important;
+    }
+
+    .lp-wrapper {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .lp-gallery-img {
+        height: 90px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lp-carousel-title {
+        font-size: 22px !important;
+    }
+
+    .lp-carousel-excerpt {
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+    .lp-gallery-img {
+        height: 70px !important;
+    }
+
+    .lp-corp-main-img,
+    .lp-event-main-img {
+        height: 140px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.lp-latest-news {
+    height: 404px;
+    background-color: #494747 !important;
+}
+
+
+.lp-latest-news .lp-viewall{
+    color: white !important;
+}
+
+.lp-latest-news .lp-section-header h3{
+    color: white !important;
+}
+
+.lp-new-joiners .lp-viewall{
+    color: white !important;
+}
