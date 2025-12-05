@@ -22,7 +22,6 @@ import {
   getDocumentsFromLibraryAsync,
   getHRAnnouncements,
   getJobOpeningsData,
-  getLeadershipMessages,
   getNewgetOnboardEmployee,
   getNewJoiners,
   getNewsEvents,
@@ -44,14 +43,15 @@ import {
   RecognizedEmployeeType,
   WelcomeMessageType
 } from "../../utils/types";
-
 import { spContext } from "../../App";
 import { defaultTenantUrl } from "../../utils/constant";
 import "./landingpagefull.css";
+import { getLeadershipMessagesItems } 
+from "../../services/adminServices/LeadershipMessagesService/LeadershipMessagesService";
 
 const LandingPageFull: React.FC = () => {
   const { sp } = useContext(spContext);
-  const navigate = useNavigate(); // <-- Added for View All navigation
+  const navigate = useNavigate();
 
   const [carouselData, setCarouselData] = useState<HeroSlide[]>([]);
   const [corporateNewsData, setCorporateNewsData] = useState<CorporateNewsType>({
@@ -78,19 +78,22 @@ const LandingPageFull: React.FC = () => {
 
   useEffect(() => {
     if (!leftRef.current || !rightRef.current) return;
-    if (window.innerWidth < 1024) return;
 
-    const resizeObserver = new ResizeObserver((entries) => {
-      for (const entry of entries) {
-        if (entry.target === leftRef.current) {
-          rightRef.current!.style.height = `${entry.contentRect.height}px`;
-        }
+    const updateHeight = () => {
+      if (window.innerWidth >= 1024) {
+        rightRef.current!.style.height = "auto";  // reset first
+        rightRef.current!.style.height = `${leftRef.current!.offsetHeight}px`;
+      } else {
+        rightRef.current!.style.height = "auto";
       }
-    });
+    };
 
-    resizeObserver.observe(leftRef.current);
-    return () => resizeObserver.disconnect();
-  }, []);
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+
+    return () => window.removeEventListener("resize", updateHeight);
+  }, [carouselData, leadershipData, hrData, welcomeData]);
+
 
   useEffect(() => {
     loadAllData();
@@ -166,7 +169,7 @@ const LandingPageFull: React.FC = () => {
         }))
       );
 
-      const leadershipItems = (await getLeadershipMessages(sp, "LeadershipMessage")) ?? [];
+      const leadershipItems = (await getLeadershipMessagesItems(sp, "LeadershipMessage")) ?? [];
 
       setLeadershipData(
         leadershipItems
@@ -175,11 +178,12 @@ const LandingPageFull: React.FC = () => {
             id: item.ID,
             message: item.Message,
             avatar: item.UserImage,
-            name: item.Title,
-            title: item.Designation
+            name: item.Title,          // ✅ FIXED
+            title: item.Designation,   // correct
           }))
       );
 
+      console.log("RAW leadershipItems:", leadershipItems);
 
       const hrItems = (await getHRAnnouncements(sp, "HRAnnouncements")) ?? [];
 
@@ -202,15 +206,12 @@ const LandingPageFull: React.FC = () => {
       const onboardItems = (await getNewgetOnboardEmployee(sp, "EmployeeOnboard")) ?? [];
 
       const mappedOnboard = onboardItems
-        .filter((item: any) => item.Status === "publish") // 🔥 if your list supports publish/unpublish
-        .sort((a: any, b: any) => new Date(b.Created).getTime() - new Date(a.Created).getTime()) // 🔥 newest first
-        .map((item: any) => ({
-          id: item.UserID,
-          message: item.Message || "Welcome to the team!",
-          employeeName: item.EmployeeName,
-          employeeImage: item.Image,
-          designation: item.Designation ?? "",
-          department: item.Department ?? ""
+        .filter(i => i.Status === "publish")
+        .map(i => ({
+          id: i.EmployeeID,
+          message: i.Message,
+          employeeName: i.EmployeeName,
+          employeeImage: i.Image,
         }));
 
       setWelcomeData(mappedOnboard);
@@ -238,7 +239,6 @@ const LandingPageFull: React.FC = () => {
       <div className="lp-left" ref={leftRef}>
         <Carousel slides={carouselData} />
 
-        {/* ✅ FIXED — View All for Corporate News */}
         <CorporateNews
           mainNews={corporateNewsData.mainEvent}
           sideNews={corporateNewsData.sideEvents}

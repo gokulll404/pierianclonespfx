@@ -62,32 +62,36 @@ export const getDocumentsFromLibraryAsync = async (sp: SPFI, libraryName: string
 export const getNewgetOnboardEmployee = async (
   sp: SPFI,
   newJoinerListName: string
-): Promise<{ EmployeeName: string; Image: string }[]> => {
+) => {
   try {
     const newJoineeItems: any[] = await sp.web.lists
       .getByTitle(newJoinerListName)
-      .items.select("EmployeeID")
+      .items.select("ID", "EmployeeID", "EmployeeName", "Image", "Status")
       .filter("Status eq 'publish'")
       .orderBy("Id", false)();
 
     const employeeItems: any[] = await getCachedEmployeeData(sp);
 
-    const results = newJoineeItems.map(item => {
-      const itemEmpID = item?.EmployeeID?.toString();
-      const employee = employeeItems.find(emp => emp?.UserID?.toString() === itemEmpID);
+    return newJoineeItems.map(item => {
+      const empID = item.EmployeeID?.toString();
+      const employee = employeeItems.find(emp => emp.UserID?.toString() === empID);
 
       return {
-        EmployeeName: employee?.EmployeeName || '',
-        Image: employee?.ProfilePicture1 || ''
+        id: item.ID,
+        EmployeeID: item.EmployeeID,
+        EmployeeName: item.EmployeeName || employee?.EmployeeName || '',
+        Message: "We're excited to have you with us!", // fallback message
+        Image: item.Image || employee?.ProfilePicture1 || '',
+        Status: item.Status
       };
     });
 
-    return results;
   } catch (err) {
     handleError(err, `getNewgetOnboardEmployee for ${newJoinerListName}`);
     return [];
   }
 };
+
 
 export const getNewJoiners = async (
   sp: SPFI,

@@ -50,6 +50,9 @@ const LeadershipMessage: React.FC<LeadershipMessageProps> = ({ data }) => {
     }
   };
 
+  console.log("LEADERSHIP DATA:", data);
+
+
   return (
     <div className="lp-card lp-leadership">
       <div className="lp-lead-head">
